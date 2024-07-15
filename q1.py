@@ -46,4 +46,6 @@ class FutureSpotPriceFetcher:
 
 if __name__ == "__main__":
     fetcher = FutureSpotPriceFetcher("secret.txt")
-    pprint(fetcher.getAllPrice())
+    prices = fetcher.getAllPrice()
+    pprint(prices)
+    pprint("total: " + str(len(prices)) + "tickers")
